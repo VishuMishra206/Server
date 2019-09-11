@@ -1,0 +1,23 @@
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-09-11 16:31:46.860
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2019-09-11 16:31:47.165
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2019-09-11 16:31:47.166
+!MESSAGE Could not write workspace metadata 'D:/vishu_oxygen/.metadata/.plugins/org.eclipse.core.resources/.root/7.tree'.
+!STACK 0
+java.io.FileNotFoundException: D:\vishu_oxygen\.metadata\.plugins\org.eclipse.core.resources\.root\7.tree (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:51)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1408)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1190)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2283)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-09-11 16:31:49.804
+!MESSAGE The workspace will exit with unsaved changes in this session.
